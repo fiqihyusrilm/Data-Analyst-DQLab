@@ -1,0 +1,16 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+```{r}
+"bapak kau"
+```
+```{r}
+cars
+```
+
+```{r}
+plot(cars)
+```
+
