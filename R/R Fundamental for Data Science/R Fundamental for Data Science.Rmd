@@ -1,0 +1,59 @@
+---
+title: "Introduction to Data Science with R"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Code Pertama, Hello World!
+
+```{r}
+"Hello World"
+1+5
+```
+Teks, Angka dan Rumus Perhitungan
+```{r}
+9
+"Budi"
+9*3
+```
+Menampilkan dengan Fungsi Print
+```{r}
+print("Hello World")
+print(3 + 4)
+```
+Huruf Besar, Huruf Kecil dan Format Angka
+```{r}
+01
+1
+"01-01-1980"
+"1-1-1980"
+"Budi"
+"BUDI"
+```
+Function
+```{r}
+c(5:10)
+```
+Variable
+```{r}
+budi_berat_kg <- 68
+
+santi_berat_kg <- 54.5
+
+budi_berat_kg
+
+santi_berat_kg
+
+pi <- 3.14
+
+pi
+```
+Comment pada R
+
+```{r}
+2 + 2 #Ini adalah baris komentar
+```
+
