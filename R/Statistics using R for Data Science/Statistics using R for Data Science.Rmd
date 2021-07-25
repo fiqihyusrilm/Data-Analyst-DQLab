@@ -1,0 +1,35 @@
+---
+title: "Statistics using R for Data Science"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Membaca Dataset dengan read.csv
+```{r}
+data_intro <- read.csv("https://storage.googleapis.com/dqlab-dataset/data_intro.csv",sep=";") #Membaca dataset dengan read.csv dan dimasukkan ke variable data_intro
+data_intro
+
+```
+Melihat Tipe Data dengan Str
+```{r}
+#Membaca dataset dengan read.csv dan dimasukkan ke variable data_intro
+data_intro <- read.csv("https://storage.googleapis.com/dqlab-dataset/data_intro.csv",sep=";")
+str(data_intro)
+
+```
+
+Merubah Tipe Data Kolom ID.Pelanggan menjadi Character
+```{r}
+## mengubah data menjadi karakter karena tidak dilakukan analisis statistik pada variabel ID Pelanggan dan nama
+data_intro$ID.Pelanggan <-as.character(data_intro$ID.Pelanggan)
+data_intro$Nama <-as.character(data_intro$Nama)
+## melihat apakah sudah berhasil dalam mengubah variabel tersebut
+str(data_intro$ID.Pelanggan)
+str(data_intro$Nama)
+
+
+```
+
